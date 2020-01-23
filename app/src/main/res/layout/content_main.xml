@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/addphoto" />
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:hint="@string/titulo" />
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:hint="@string/descricao" />
+
+        <EditText
+            android:id="@+id/edtLocalizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtDescricao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:hint="@string/endere_o" />
+
+        <EditText
+            android:id="@+id/edtValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtLocalizacao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/valor"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/edtGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtValor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:ems="15"
+            android:hint="@string/guia" />
+
+        <EditText
+            android:id="@+id/txtLatitude"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_below="@+id/edtValor"
+            android:hint="Latitude" />
+
+        <EditText
+            android:id="@+id/txtLongitude"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edtValor"
+            android:ems="15"
+            android:hint="Longitude" />
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLatitude"
+            android:minWidth="160dp"
+            android:text="@string/marcar_local" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGetLocation"
+            android:minWidth="180dp"
+            android:text="@string/salvar" />
+
+        <Button
+            android:id="@+id/btnList"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnGetLocation"
+            android:layout_alignTop="@+id/btnAdd"
+            android:minWidth="180dp"
+            android:text="@string/lista_todos" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

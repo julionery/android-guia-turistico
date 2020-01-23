@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Guia</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Guia Turístico</string>
+    <string name="nav_header_subtitle">guia.turistico@android.com.br</string>
+    <string name="nav_header_desc">Guia de Turismo</string>
+    <string name="action_exit">Sair</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <string name="btnLogin">Login</string>
+
+    <string name="progressDialog">Carregando...</string>
+    <string name="error_no_email">Entre com o e-mail!</string>
+    <string name="error_na_senha">Entre com a senha!</string>
+    <string name="error_invalid_email">Informe um email válido!</string>
+    <string name="error_credentials">Usuário ou senha inválidos!</string>
+    <string name="labelExit">Sair</string>
+    <string name="error_connection">Falha ao conectar.</string>
+    <string name="error_request">Falha na requisição.</string>
+    <string name="label_error_invalid_response">Erro de requisição inválida.</string>
+    <string name="title_list">Lista de Locais</string>
+    <string name="ButtonListView">Done</string>
+    <string name="salvar">Salvar</string>
+    <string name="marcar_local">Marcar Local</string>
+    <string name="guia">Guia</string>
+    <string name="valor">Valor</string>
+    <string name="endere_o">Endereço</string>
+    <string name="descricao">Descrição</string>
+    <string name="titulo">Título</string>
+    <string name="lista_todos">Lista Todos</string>
+</resources>
